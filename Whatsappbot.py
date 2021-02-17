@@ -1,5 +1,5 @@
 import pyautogui,time
 time.sleep(5)
-for i in range(10):
-    pyautogui.typewrite()
+for word in open("Script","r"):
+    pyautogui.typewrite(word)
     pyautogui.press("enter")
